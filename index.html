@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <!-- spinnner -->
+    <section
+      class="bg-dark position-fixed justify-content-center align-items-center"
+      id="spiner-item"
+      style="
+        display: flex;
+        width: 100%;
+        min-height: 100vh;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 9999999999;
+      "
+    >
+      <div class="sk-folding-cube">
+        <div class="sk-cube1 sk-cube"></div>
+        <div class="sk-cube2 sk-cube"></div>
+        <div class="sk-cube4 sk-cube"></div>
+        <div class="sk-cube3 sk-cube"></div>
+      </div>
+    </section>
+    <!-- nav bar -->
+    <div class="father-nav position-relative" style="z-index: 1111">
+      <section class="navo d-flex w-25 position-fixed">
+        <div
+          class="
+            bg-black
+            w-75
+            vh-100
+            d-flex
+            flex-column
+            align-items-center
+            position-relative
+          "
+          id="navo-1"
+        >
+          <ul class="px-0 text-center py-5" id="links">
+            <li><a href="#" id="nowPlaying">Now Playing</a></li>
+            <li><a href="#Popular" id="pop">Popular</a></li>
+            <li><a href="#Top-rated" id="tOp">Top Rated</a></li>
+            <li><a href="#Trending" id="Trend">trending</a></li>
+            <li><a href="#Upcoming" id="Upc">UpComing</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
+          </ul>
+          <div
+            class="
+              mt-4
+              social
+              w-100
+              d-flex
+              flex-row
+              justify-content-evenly
+              align-items-end
+              position-absolute
+            "
+            style="bottom: 10%"
+          >
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fas fa-globe"></i>
+          </div>
+        </div>
+
+        <div
+          class="
+            bg-light
+            vh-100
+            d-flex
+            flex-column
+            justify-content-between
+            align-items-center
+          "
+          id=" navo-2"
+        >
+          <img src="images/logo.png" class="w-50 py-2" alt="" />
+          <div><i id="menu" class="fas fa-bars fa-2x"></i></div>
+          <div class="social1 d-flex flex-column">
+            <i class="fas fa-share-alt py-2"></i>
+            <i class="fas fa-globe py-2"></i>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- section of search input -->
+    <section class="father of search">
+      <div class="container w-75 mx-auto pt-5">
+        <div class="search-inputs mx-auto w-100 row">
+          <div class="col-md-6 py-2">
+            <input
+              type="search"
+              class="w-100 form-control bg-dark"
+              name=""
+              id="search-1"
+              placeholder="Get movie by name"
+            />
+          </div>
+          <div class="col-md-6 py-2">
+            <input
+              type="search"
+              class="w-100 bg-dark form-control"
+              name=""
+              id="search-2"
+              placeholder="Search..."
+            />
+          </div>
+        </div>
+      </div>
+    <!-- section of movie -->
+    <section class="father-movie mb-5">
+      <div class="container py-5 mx-auto">
+        <div class="w-100 row father-papa mx-auto gap-4 mb-5" id="movies"></div>
+      </div>
+    </section>
+    <div class="mt-5 w-100" style="height:100px"></div>
+    <!-- contactUs section -->
+    <section id="Contact" class="mt-5">
+      <div class="container w-75 mx-auto py-2 mt-5">
+<div class="row">
+  <h2 style="color: crimson;">ContactUs....</h2>
+  <div class="col-md-6 mx-auto py-2"><input type="text" class="form-control bg-dark" name="" id="nameInput" placeholder="Enter Your Name">
+  <div class="bg-danger bg-gradient rounded" id="namee">Your Name Should start with cap letter</div></div>
+  <div class="col-md-6 mx-auto py-2"><input type="email" name=""  class="form-control bg-dark" id="emailInput" placeholder="Enter Email">
+    <div class="bg-danger bg-gradient rounded" id="Email">Your Email is Invalid</div></div>
+  <div class="col-md-6 mx-auto py-2"><input type="number" name="" class="form-control bg-dark" id="phoneInput" placeholder="Enter Your Number"> <div class="bg-danger bg-gradient rounded" id="phoneNum">Your number is Invalid</div></div>
+  <div class="col-md-6 mx-auto py-2"><input type="number" name="" class="form-control bg-dark" placeholder="Eneter your Age" id="ageInput"> <div class="bg-danger bg-gradient rounded" id="ageNum">Your age should from 1:99</div></div>
+  <div class="col-md-6 mx-auto py-2"><input type="password" name="" id="passInput" placeholder="Enter Your Password" class="form-control bg-dark"> <div class="bg-danger bg-gradient rounded" id="Pass">entre valid password *Minimum eight characters, at least one letter and one number</div></div>
+  <div class="py-3"><button class="btn btn-outline-danger" id="submit">Submit</button></div>
+</div>
+</div>
+    </section>
+
+    <!-- js links -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
